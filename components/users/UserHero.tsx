@@ -11,7 +11,7 @@ const UserHero = ({
 }:UserHeroProps) => {
     const { data: fetchedUser } = useUser(userId)
     return (
-        <div className="bg-neutral-700 h-44 relative">
+        <div className="bg-neutral-200 dark:bg-neutral-700 shadow h-44 relative">
             {fetchedUser?.coverImage && (
                 <Image
                 src={fetchedUser.coverImage}

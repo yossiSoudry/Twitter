@@ -13,17 +13,16 @@ const Header = ({ label, showBackArrow}: HeaderProps) => {
     router.back();
   }, [router]);
   return (
-    <div className="border-b border-neutral-800 p-5">
+    <div className="border-b border-neutral-200 dark:border-neutral-900 p-5">
       <div className="flex items-center gap-2">
         {showBackArrow && (
           <BiArrowBack
             onClick={handleBack}
-            color="white"
             size={20}
-            className="cursor-pointer hover:opacity-70 transition"
+            className="cursor-pointer text-neutral-900 dark:text-white hover:opacity-70 transition"
           />
         )}
-        <h1 className="text-white text-xl font-semibold">{label}</h1>
+        <h1 className="text-slate-700 dark:text-white text-xl font-semibold">{label}</h1>
       </div>
     </div>
   );

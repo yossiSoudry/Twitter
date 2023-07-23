@@ -43,7 +43,7 @@ const ImageUpload = ({
   
   return (
     <div {...getRootProps({
-      className: 'w-full p-4 text-white cursor-pointer text-center border-2 border-doted rounded-md border-neutral-700'
+      className: 'w-full p-4 text-slate-700 dark:text-white cursor-pointer text-center border-2 border-doted rounded-md border-neutral-700'
     })}>
       <input {...getInputProps()} />
       {
@@ -59,7 +59,7 @@ const ImageUpload = ({
             </a>
           </div>
         ) : (
-          <p className="text-white">{label}</p>
+          <p className="text-slate-700 dark:text-white">{label}</p>
         )
       }
     </div>

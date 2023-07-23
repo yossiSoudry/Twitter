@@ -58,7 +58,7 @@ const PostItem = ({ data, userId }: PostItemProps) => {
   return (
     <div
       onClick={goToPost}
-      className="border-b border-neutral-800 p-5 cursor-pointer hover:bg-neutral-900 transition"
+      className="border-b border-neutral-200 dark:border-neutral-900 p-5 cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-900 transition"
     >
       <div className="flex items-start gap-3">
         <div>
@@ -68,7 +68,7 @@ const PostItem = ({ data, userId }: PostItemProps) => {
           <div className="flex items-center gap-2">
             <p
               onClick={goToUser}
-              className="text-white font-semibold cursor-pointer hover:underline"
+              className="text-slate-700 dark:text-white font-semibold cursor-pointer hover:underline"
             >
               {data.user.name}
             </p>
@@ -90,7 +90,7 @@ const PostItem = ({ data, userId }: PostItemProps) => {
             </span>
             <span className="text-neutral-500 text-sm">{createdAt}</span>
           </div>
-          <div className="text-white mt-1">{data.body}</div>
+          <div className="text-slate-700 dark:text-white mt-1">{data.body}</div>
           <div className="flex items-center mt-3 gap-10">
             <div className="flex items-center text-neutral-500 gap-2 cursor-pointer transition hover:text-sky-500">
               <AiOutlineMessage size={20} />

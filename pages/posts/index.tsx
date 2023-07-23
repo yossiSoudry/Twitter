@@ -6,9 +6,8 @@ import PostFeed from "@/components/posts/PostFeed";
 export default function Home() {
   return (
     <>
-      <Header label="Home" />
-      {/* <Form placeholder="What's happening?" /> */}
-      <PostFeed />
+      <Header label="New Tweet" />
+      <Form placeholder="What's happening?" />
     </>
   );
 }

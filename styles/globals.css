@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  @apply h-full bg-black;
+  @apply h-full bg-white dark:bg-black;
 }
 body {
-  @apply h-full bg-black;
+  @apply h-full bg-white dark:bg-black;
 }
 .center {
   @apply justify-center 

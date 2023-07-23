@@ -1,6 +1,7 @@
 import { BiLogOut } from "react-icons/bi";
 import { BsHouseFill, BsBellFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
+import { VscSettings } from "react-icons/vsc";
 import SidebarLogo from "./SidebarLogo";
 import SidebarItem from "./SidebarItem";
 import SidebarTweetButton from "./SidebarTweetButton";
@@ -30,9 +31,15 @@ const Sidebar = () => {
       href: `/users/${currentUser?.id}`,
       auth: true,
     },
+    {
+      icon: VscSettings,
+      label: "Settings",
+      href: '/settings',
+      auth: true,
+    },
   ];
   return (
-    <div className="col-span-1 h-full pr-4 md:pr-6">
+    <div className="hidden lg:block col-span-1 h-full pr-4 md:pr-6">
       <div className="flex flex-col items-end">
         <div className="space-y-2 lg:w-[230px]">
           <SidebarLogo />

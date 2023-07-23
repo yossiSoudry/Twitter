@@ -38,13 +38,13 @@ const SidebarItem = ({
 
   return (
     <div className="flex items-center" onClick={handleClick}>
-      <div className="relative rounded-full h-14 w-14 center p-4 hover:bg-slate-300/10 cursor-pointer lg:hidden">
-        <Icon size={28} color="white" />
+      <div className=" center flex-1 hover:bg-slate-300/10 cursor-pointer lg:hidden">
+        <Icon size={20} className="text-neutral-900 dark:text-white" />
         {alert && <BsDot className="text-sky-500 absolute -top-4 left-0" size={70}/>}
       </div>
       <div className="relative hidden lg:flex items-center gap-4 p-4 rounded-full hover:bg-slate-300/10 cursor-pointer">
-        <Icon size={28} color="white" />
-        <p className="hidden lg:block text-white text-xl">{label}</p>
+        <Icon size={28} className="text-neutral-900 dark:text-white" />
+        <p className="hidden lg:block text-slate-700 dark:text-white text-xl">{label}</p>
         {alert && <BsDot className="text-sky-500 absolute -top-4 left-0" size={70}/>}
       </div>
     </div>
