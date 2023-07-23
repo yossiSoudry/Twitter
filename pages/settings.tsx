@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import FollowBar from "@/components/layout/FollowBar";
 import { useStateContext } from "@/context/context";
 
-const settings = () => {
+const Settings = () => {
   const { setCurrentMode } = useStateContext();
   return (
     <div>
@@ -59,4 +59,4 @@ const settings = () => {
   );
 };
 
-export default settings;
+export default Settings;
